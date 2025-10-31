@@ -1,0 +1,24 @@
+{
+  "displayName": "Dispatcher Error Rate Alert",
+  "combiner": "OR",
+  "conditions": [
+    {
+      "displayName": "error rate > 1%",
+      "conditionThreshold": {
+        "filter": "metric.type=\"logging.googleapis.com/user/error_rate\" resource.type=\"cloud_run_revision\" resource.labels.service_name=\"dispatcher\"",
+        "comparison": "COMPARISON_GT",
+        "thresholdValue": 0.01,
+        "duration": "300s",
+        "trigger": {
+          "count": 1
+        },
+        "aggregations": [
+          {
+            "alignmentPeriod": "60s",
+            "perSeriesAligner": "ALIGN_RATE"
+          }
+        ]
+      }
+    }
+  ]
+}

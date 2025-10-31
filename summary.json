@@ -1,0 +1,41 @@
+{
+  "projects": ["agentes-ia-dev", "agentes-ia-prod"],
+  "cloud_run_urls": {
+    "dev": {
+      "whatsapp-webhook": "https://whatsapp-webhook-878958463385.us-central1.run.app",
+      "llm_orchestrator": "https://llm-orchestrator-878958463385.us-central1.run.app",
+      "dispatcher": "https://dispatcher-878958463385.us-central1.run.app"
+    },
+    "prod": {
+      "whatsapp-webhook": "https://whatsapp-webhook-1046851574153.us-central1.run.app",
+      "llm_orchestrator": "https://llm-orchestrator-1046851574153.us-central1.run.app",
+      "dispatcher": "https://dispatcher-1046851574153.us-central1.run.app"
+    }
+  },
+  "secret_ids_examples": [
+    "projects/agentes-ia-dev/secrets/tenants-viajes-bumeran-META_TOKEN",
+    "projects/agentes-ia-dev/secrets/GEMINI_MODEL"
+  ],
+  "pubsub": {
+    "topics": [],
+    "subscriptions": []
+  },
+  "monitoring": {
+    "dashboards": [
+      "projects/878958463385/dashboards/347494aa-15aa-4bdf-822d-7894e8f5c526",
+      "projects/1046851574153/dashboards/74ec0f80-802d-43e7-9e53-37a577bf4e27"
+    ],
+    "alert_policies": [
+      "projects/agentes-ia-dev/alertPolicies/8365938372302919393",
+      "projects/agentes-ia-prod/alertPolicies/8898329275931237022",
+      "projects/agentes-ia-dev/alertPolicies/4578674807351374532",
+      "projects/agentes-ia-prod/alertPolicies/4241304254298936783"
+    ]
+  },
+  "bigquery": {
+    "dataset": "log_analytics"
+  },
+  "budgets": [],
+  "onboarding_endpoint": "https://tenants-admin-878958463385.us-central1.run.app",
+  "healthcheck": "https://whatsapp-webhook-878958463385.us-central1.run.app/healthz"
+}

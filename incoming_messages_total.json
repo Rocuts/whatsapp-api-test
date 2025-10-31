@@ -1,0 +1,21 @@
+{
+  "name": "incoming_messages_total",
+  "description": "Total number of incoming messages",
+  "filter": "resource.type=\"cloud_run_revision\" AND resource.labels.service_name=\"whatsapp-webhook\" AND jsonPayload.metric=\"incoming_messages_total\"",
+  "metricDescriptor": {
+    "name": "logging.googleapis.com/user/incoming_messages_total",
+    "metricKind": "DELTA",
+    "valueType": "INT64",
+    "unit": "1",
+    "labels": [
+      {
+        "key": "tenant",
+        "valueType": "STRING",
+        "description": "The tenant that received the message"
+      }
+    ]
+  },
+  "labelExtractors": {
+    "tenant": "EXTRACT(jsonPayload.tenant)"
+  }
+}

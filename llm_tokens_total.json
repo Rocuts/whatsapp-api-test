@@ -1,0 +1,27 @@
+{
+  "name": "llm_tokens_total",
+  "description": "Total number of LLM tokens",
+  "filter": "resource.type=\"cloud_run_revision\" AND resource.labels.service_name=\"llm-orchestrator\" AND jsonPayload.metric=\"llm_tokens_total\"",
+  "metricDescriptor": {
+    "name": "logging.googleapis.com/user/llm_tokens_total",
+    "metricKind": "DELTA",
+    "valueType": "INT64",
+    "unit": "1",
+    "labels": [
+      {
+        "key": "tenant",
+        "valueType": "STRING",
+        "description": "The tenant that made the request"
+      },
+      {
+        "key": "model",
+        "valueType": "STRING",
+        "description": "The model used for the request"
+      }
+    ]
+  },
+  "labelExtractors": {
+    "tenant": "EXTRACT(jsonPayload.tenant)",
+    "model": "EXTRACT(jsonPayload.model)"
+  }
+}

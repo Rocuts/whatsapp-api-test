@@ -1,0 +1,16 @@
+{
+  "displayName": "Webhook Health Check",
+  "monitoredResource": {
+    "type": "uptime_url",
+    "labels": {
+      "host": "whatsapp-webhook-878958463385.us-central1.run.app"
+    }
+  },
+  "httpCheck": {
+    "path": "/healthz",
+    "port": "443",
+    "useSsl": true
+  },
+  "period": "60s",
+  "timeout": "10s"
+}

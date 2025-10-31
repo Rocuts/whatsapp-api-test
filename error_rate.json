@@ -1,0 +1,11 @@
+{
+  "name": "error_rate",
+  "description": "Total number of errors",
+  "filter": "resource.type=\"cloud_run_revision\" AND severity>=ERROR",
+  "metricDescriptor": {
+    "name": "logging.googleapis.com/user/error_rate",
+    "metricKind": "DELTA",
+    "valueType": "INT64",
+    "unit": "1"
+  }
+}

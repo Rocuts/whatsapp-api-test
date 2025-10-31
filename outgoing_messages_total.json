@@ -1,0 +1,21 @@
+{
+  "name": "outgoing_messages_total",
+  "description": "Total number of outgoing messages",
+  "filter": "resource.type=\"cloud_run_revision\" AND resource.labels.service_name=\"dispatcher\" AND jsonPayload.metric=\"outgoing_messages_total\"",
+  "metricDescriptor": {
+    "name": "logging.googleapis.com/user/outgoing_messages_total",
+    "metricKind": "DELTA",
+    "valueType": "INT64",
+    "unit": "1",
+    "labels": [
+      {
+        "key": "tenant",
+        "valueType": "STRING",
+        "description": "The tenant that sent the message"
+      }
+    ]
+  },
+  "labelExtractors": {
+    "tenant": "EXTRACT(jsonPayload.tenant)"
+  }
+}

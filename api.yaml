@@ -1,0 +1,60 @@
+swagger: '2.0'
+info:
+  title: agentes-ia-webhook-gw
+  version: 1.0.0
+schemes:
+  - https
+securityDefinitions:
+  api_key:
+    type: apiKey
+    name: x-api-key
+    in: header
+security:
+  - api_key: []
+paths:
+  /api/webhook/{tenant}:
+    parameters:
+      - name: tenant
+        in: path
+        required: true
+        type: string
+    get:
+      operationId: getWebhookVerification
+      security: []
+      parameters:
+        - name: hub.mode
+          in: query
+          required: false
+          type: string
+        - name: hub.verify_token
+          in: query
+          required: false
+          type: string
+        - name: hub.challenge
+          in: query
+          required: false
+          type: string
+      produces:
+        - text/plain
+      x-google-backend:
+        address: https://whatsapp-webhook-878958463385.us-central1.run.app
+        path_translation: APPEND_PATH_TO_ADDRESS
+        jwt_audience: https://whatsapp-webhook-878958463385.us-central1.run.app
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+    post:
+      operationId: postWebhookEvent
+      security:
+        - api_key: []
+      consumes:
+        - application/json
+      x-google-backend:
+        address: https://whatsapp-webhook-878958463385.us-central1.run.app
+        path_translation: APPEND_PATH_TO_ADDRESS
+        jwt_audience: https://whatsapp-webhook-878958463385.us-central1.run.app
+      responses:
+        '200':
+          description: OK
