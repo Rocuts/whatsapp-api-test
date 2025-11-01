@@ -25,3 +25,16 @@ __pycache__/
 # herramientas/experimentos que pueden contener secretos
 .codex/
 .gemini/
+.local/
+.npm/
+.rustup/
+.cache/
+.codeoss/
+.codex/
+.gemini/
+.venv/
+venv/
+__pycache__/
+node_modules/
+dist/
+build/
