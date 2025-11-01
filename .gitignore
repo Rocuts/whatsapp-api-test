@@ -1,72 +1,24 @@
-# Python cache and build artifacts
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
+# credenciales / llaves / historiales
+.git-credentials
+.git-credentials.bak
+.ssh/
+.lesshst
+.bash_history
 
-# Virtual environments
-.venv/
-venv/
-env/
-ENV/
-.tox/
-.nox/
-
-# Packaging outputs
-build/
-dist/
-*.egg-info/
-.eggs/
-pip-wheel-metadata/
-
-# Testing and tooling caches
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-coverage.xml
-htmlcov/
+# caches / IDE
 .cache/
+.codeoss/
 
-# Logs and reports
-*.log
-logs/
+# binarios grandes / herramientas
+cloudcode_cli
+cloud-code/
+cloud-code/**
 
-# IDE / Editor files
-.vscode/
-.idea/
-*.code-workspace
-*.swp
-*.swo
-
-# Operating system files
-.DS_Store
-Thumbs.db
-
-# Environment and secret files
+# comunes
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
 .env
 .env.*
-*.env
-*.local
-*.secret
-*.secrets
-*.private
-*.pem
-*.key
-*.p12
-*.crt
-
-# Infrastructure state and variables
-terraform.tfstate*
-*.tfvars
-*.tfvars.json
-
-# Archives and bundles
-*.tar
-*.tar.gz
-*.zip
-
-# Cloud Shell / remote IDE artifacts
-/.cache/
-/.codeoss/
-/.config/
