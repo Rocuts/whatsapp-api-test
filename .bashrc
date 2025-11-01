@@ -116,3 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 source /google/devshell/bashrc.google
+eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519

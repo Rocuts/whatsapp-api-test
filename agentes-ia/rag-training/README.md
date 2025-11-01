@@ -12,14 +12,14 @@ Centralizar la documentación y datos necesarios para generar embeddings y alime
 
 ## Flujo sugerido
 
-1. **Ingesta**  
-   Normaliza los documentos en `documents/` (UTF-8, formato limpio).  
+1. **Ingesta**
+   Normaliza los documentos en `documents/` (UTF-8, formato limpio).
    Usa `scripts/ingest.py` (plantilla) para generar embeddings con Gemini 1.5 Pro y guarda la salida en `artifacts/`.
 
-2. **Validación**  
+2. **Validación**
    Documenta en esta carpeta las métricas de evaluación (recall, latencia, etc.).
 
-3. **Deploy**  
+3. **Deploy**
    Publica los artefactos validados en el almacenamiento elegido (por ejemplo, Vertex Matching Engine o Firestore) y actualiza las referencias en `llm-orchestrator`.
 
 ## Próximos pasos

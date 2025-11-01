@@ -1,0 +1,331 @@
+[1mdiff --git a/.bashrc b/.bashrc[m
+[1mindex bbbb39b..cd2e87f 100644[m
+[1m--- a/.bashrc[m
+[1m+++ b/.bashrc[m
+[36m@@ -116,3 +116,4 @@[m [mif ! shopt -oq posix; then[m
+   fi[m
+ fi[m
+ source /google/devshell/bashrc.google[m
+[32m+[m[32meval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519[m
+[1mdiff --git a/.config/configstore/update-notifier-@google/gemini-cli.json b/.config/configstore/update-notifier-@google/gemini-cli.json[m
+[1mindex c8edbcb..0045a12 100644[m
+[1m--- a/.config/configstore/update-notifier-@google/gemini-cli.json[m
+[1m+++ b/.config/configstore/update-notifier-@google/gemini-cli.json[m
+[36m@@ -7,4 +7,4 @@[m
+ 		"type": "minor",[m
+ 		"name": "@google/gemini-cli"[m
+ 	}[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/.config/powershell/Microsoft.PowerShell_profile.ps1 b/.config/powershell/Microsoft.PowerShell_profile.ps1[m
+[1mindex 8e709f9..2bd2c10 100755[m
+[1m--- a/.config/powershell/Microsoft.PowerShell_profile.ps1[m
+[1m+++ b/.config/powershell/Microsoft.PowerShell_profile.ps1[m
+[36m@@ -28,4 +28,4 @@[m [mfunction prompt {[m
+         # rm so we will not read the config each time.[m
+         rm -f $CLOUDSDK_CONFIG/config_sentinel[m
+     }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/.docker/buildx/.buildNodeID b/.docker/buildx/.buildNodeID[m
+[1mindex 0b72d75..528f67d 100644[m
+[1m--- a/.docker/buildx/.buildNodeID[m
+[1m+++ b/.docker/buildx/.buildNodeID[m
+[36m@@ -1 +1 @@[m
+[31m-3c5dbde25a69a67b[m
+\ No newline at end of file[m
+[32m+[m[32m3c5dbde25a69a67b[m
+[1mdiff --git a/.docker/buildx/activity/default b/.docker/buildx/activity/default[m
+[1mindex 1a71fd4..bbf69e4 100644[m
+[1m--- a/.docker/buildx/activity/default[m
+[1m+++ b/.docker/buildx/activity/default[m
+[36m@@ -1 +1 @@[m
+[31m-2025-10-30T21:58:40Z[m
+\ No newline at end of file[m
+[32m+[m[32m2025-10-30T21:58:40Z[m
+[1mdiff --git a/.docker/buildx/refs/default/default/60kgo0xyghbnk5i1mmi2qnzc2 b/.docker/buildx/refs/default/default/60kgo0xyghbnk5i1mmi2qnzc2[m
+[1mindex e5d0a82..6fec097 100644[m
+[1m--- a/.docker/buildx/refs/default/default/60kgo0xyghbnk5i1mmi2qnzc2[m
+[1m+++ b/.docker/buildx/refs/default/default/60kgo0xyghbnk5i1mmi2qnzc2[m
+[36m@@ -1 +1 @@[m
+[31m-{"Target":"default","LocalPath":"/home/contacto/agentes-ia/whatsapp-webhook","DockerfilePath":""}[m
+\ No newline at end of file[m
+[32m+[m[32m{"Target":"default","LocalPath":"/home/contacto/agentes-ia/whatsapp-webhook","DockerfilePath":""}[m
+[1mdiff --git a/.docker/buildx/refs/default/default/8i5w7jjwo5bokj6z57n5d8xoj b/.docker/buildx/refs/default/default/8i5w7jjwo5bokj6z57n5d8xoj[m
+[1mindex e5d0a82..6fec097 100644[m
+[1m--- a/.docker/buildx/refs/default/default/8i5w7jjwo5bokj6z57n5d8xoj[m
+[1m+++ b/.docker/buildx/refs/default/default/8i5w7jjwo5bokj6z57n5d8xoj[m
+[36m@@ -1 +1 @@[m
+[31m-{"Target":"default","LocalPath":"/home/contacto/agentes-ia/whatsapp-webhook","DockerfilePath":""}[m
+\ No newline at end of file[m
+[32m+[m[32m{"Target":"default","LocalPath":"/home/contacto/agentes-ia/whatsapp-webhook","DockerfilePath":""}[m
+[1mdiff --git a/.docker/buildx/refs/default/default/kuhak2b90scxccn1f4r0ihpc7 b/.docker/buildx/refs/default/default/kuhak2b90scxccn1f4r0ihpc7[m
+[1mindex 638768f..ae793a4 100644[m
+[1m--- a/.docker/buildx/refs/default/default/kuhak2b90scxccn1f4r0ihpc7[m
+[1m+++ b/.docker/buildx/refs/default/default/kuhak2b90scxccn1f4r0ihpc7[m
+[36m@@ -1 +1 @@[m
+[31m-{"Target":"default","LocalPath":"/home/contacto/agentes-ia/tenants-admin","DockerfilePath":""}[m
+\ No newline at end of file[m
+[32m+[m[32m{"Target":"default","LocalPath":"/home/contacto/agentes-ia/tenants-admin","DockerfilePath":""}[m
+[1mdiff --git a/.docker/buildx/refs/default/default/oiqmw6nylar2wy6on3n0iho4u b/.docker/buildx/refs/default/default/oiqmw6nylar2wy6on3n0iho4u[m
+[1mindex 4683c82..6c8d34d 100644[m
+[1m--- a/.docker/buildx/refs/default/default/oiqmw6nylar2wy6on3n0iho4u[m
+[1m+++ b/.docker/buildx/refs/default/default/oiqmw6nylar2wy6on3n0iho4u[m
+[36m@@ -1 +1 @@[m
+[31m-{"Target":"default","LocalPath":"/home/contacto/agentes-ia/dispatcher","DockerfilePath":""}[m
+\ No newline at end of file[m
+[32m+[m[32m{"Target":"default","LocalPath":"/home/contacto/agentes-ia/dispatcher","DockerfilePath":""}[m
+[1mdiff --git a/.docker/buildx/refs/default/default/vcaynyrjnc2t3uesi0pdz0sho b/.docker/buildx/refs/default/default/vcaynyrjnc2t3uesi0pdz0sho[m
+[1mindex 1cad115..ac3ce74 100644[m
+[1m--- a/.docker/buildx/refs/default/default/vcaynyrjnc2t3uesi0pdz0sho[m
+[1m+++ b/.docker/buildx/refs/default/default/vcaynyrjnc2t3uesi0pdz0sho[m
+[36m@@ -1 +1 @@[m
+[31m-{"Target":"default","LocalPath":"/home/contacto/agentes-ia/llm-orchestrator","DockerfilePath":""}[m
+\ No newline at end of file[m
+[32m+[m[32m{"Target":"default","LocalPath":"/home/contacto/agentes-ia/llm-orchestrator","DockerfilePath":""}[m
+[1mdiff --git a/.docker/buildx/refs/default/default/y05593u6s7qd1gtxiq3km74ml b/.docker/buildx/refs/default/default/y05593u6s7qd1gtxiq3km74ml[m
+[1mindex 1cad115..ac3ce74 100644[m
+[1m--- a/.docker/buildx/refs/default/default/y05593u6s7qd1gtxiq3km74ml[m
+[1m+++ b/.docker/buildx/refs/default/default/y05593u6s7qd1gtxiq3km74ml[m
+[36m@@ -1 +1 @@[m
+[31m-{"Target":"default","LocalPath":"/home/contacto/agentes-ia/llm-orchestrator","DockerfilePath":""}[m
+\ No newline at end of file[m
+[32m+[m[32m{"Target":"default","LocalPath":"/home/contacto/agentes-ia/llm-orchestrator","DockerfilePath":""}[m
+[1mdiff --git a/.docker/buildx/refs/default/default/z800n4zebv19g3h796wwkx9v1 b/.docker/buildx/refs/default/default/z800n4zebv19g3h796wwkx9v1[m
+[1mindex 4683c82..6c8d34d 100644[m
+[1m--- a/.docker/buildx/refs/default/default/z800n4zebv19g3h796wwkx9v1[m
+[1m+++ b/.docker/buildx/refs/default/default/z800n4zebv19g3h796wwkx9v1[m
+[36m@@ -1 +1 @@[m
+[31m-{"Target":"default","LocalPath":"/home/contacto/agentes-ia/dispatcher","DockerfilePath":""}[m
+\ No newline at end of file[m
+[32m+[m[32m{"Target":"default","LocalPath":"/home/contacto/agentes-ia/dispatcher","DockerfilePath":""}[m
+[1mdiff --git a/.docker/config.json b/.docker/config.json[m
+[1mindex f2e38be..d31f6ff 100644[m
+[1m--- a/.docker/config.json[m
+[1m+++ b/.docker/config.json[m
+[36m@@ -97,4 +97,4 @@[m
+     "docker.us-west4.rep.pkg.dev": "gcloud",[m
+     "us-west8-docker.pkg.dev": "gcloud"[m
+   }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/.gsutil/credstore2 b/.gsutil/credstore2[m
+[1mindex 9dfd718..98c2277 100644[m
+[1m--- a/.gsutil/credstore2[m
+[1m+++ b/.gsutil/credstore2[m
+[36m@@ -1 +1 @@[m
+[31m-{"file_version": 2, "credentials": {"v1-noclientid-norefreshtoken-https://oauth2.googleapis.com/token": "eyJfR2NlQXNzZXJ0aW9uQ3JlZGVudGlhbHNfX3NlcnZpY2VfYWNjb3VudF9uYW1lIjogImRlZmF1bHQiLCAiYWNjZXNzX3Rva2VuIjogInlhMjkuYTBBVGk2SzJzTDJjRTJJbzFhMC10SEJXSnNpOGlxcTV4VkotRlMzT3d5MXV0MlJ5NFR6cXBfNWVkOVZzeTVybzM1YUJmT0pOOGJFU0lwOHdjNFlDc18tSmswS0NndnV4WFRqa2JEdGN2NTIxeXdKM015YVUwZGtDMm9vRU43TkdNalEtR3FfWVl0OUJJSHhpSjAwYkoxLXNqTE5HM0FSSGRlUWZwQkFsOTgwWGZVU2hIM3lxdGZWUTBBRWUxZ0dpc2hfbFVEY2N2WEFFeWhLa0FRa1VId0dxSVU5aURldjdlQkxVSk93ZGpVcE5ZOUlzMFp1cWNWeGlsM1MyRzNvNHM0bE5iWHB0LWxHS2hVY1l0bTZEYW81eTJYenVETUpxT2p4cGZRT0pDVmx2Yl8xd1hTV29CeDlCekdxMU8xTWM0T3l2VUhuTUpXdmM4aldMTlB5N1lsWTBGcVp5ZkFNNElUUUpxN2tBYUNnWUtBWmdTQVE4U0ZRSEdYMk1pUDRqaDJnVHZLQzZ6RUpDb25QeUhsdzAzNjUiLCAiY2xpZW50X2lkIjogbnVsbCwgImNsaWVudF9zZWNyZXQiOiBudWxsLCAicmVmcmVzaF90b2tlbiI6IG51bGwsICJ0b2tlbl9leHBpcnkiOiAiMjAyNS0xMC0zMFQyMjowNToxNFoiLCAidG9rZW5fdXJpIjogImh0dHBzOi8vb2F1dGgyLmdvb2dsZWFwaXMuY29tL3Rva2VuIiwgInVzZXJfYWdlbnQiOiBudWxsLCAicmV2b2tlX3VyaSI6ICJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS9yZXZva2UiLCAiaWRfdG9rZW4iOiBudWxsLCAiaWRfdG9rZW5fand0IjogbnVsbCwgInRva2VuX3Jlc3BvbnNlIjogbnVsbCwgInNjb3BlcyI6IG51bGwsICJ0b2tlbl9pbmZvX3VyaSI6IG51bGwsICJpbnZhbGlkIjogZmFsc2UsICJhc3NlcnRpb25fdHlwZSI6IG51bGwsICJzZXJ2aWNlX2FjY291bnRfZW1haWwiOiBudWxsLCAiX2NsYXNzIjogIkdjZUFzc2VydGlvbkNyZWRlbnRpYWxzIiwgIl9tb2R1bGUiOiAiYXBpdG9vbHMuYmFzZS5weS5jcmVkZW50aWFsc19saWIifQ=="}}[m
+\ No newline at end of file[m
+[32m+[m[32m{"file_version": 2, "credentials": {"v1-noclientid-norefreshtoken-https://oauth2.googleapis.com/token": "eyJfR2NlQXNzZXJ0aW9uQ3JlZGVudGlhbHNfX3NlcnZpY2VfYWNjb3VudF9uYW1lIjogImRlZmF1bHQiLCAiYWNjZXNzX3Rva2VuIjogInlhMjkuYTBBVGk2SzJzTDJjRTJJbzFhMC10SEJXSnNpOGlxcTV4VkotRlMzT3d5MXV0MlJ5NFR6cXBfNWVkOVZzeTVybzM1YUJmT0pOOGJFU0lwOHdjNFlDc18tSmswS0NndnV4WFRqa2JEdGN2NTIxeXdKM015YVUwZGtDMm9vRU43TkdNalEtR3FfWVl0OUJJSHhpSjAwYkoxLXNqTE5HM0FSSGRlUWZwQkFsOTgwWGZVU2hIM3lxdGZWUTBBRWUxZ0dpc2hfbFVEY2N2WEFFeWhLa0FRa1VId0dxSVU5aURldjdlQkxVSk93ZGpVcE5ZOUlzMFp1cWNWeGlsM1MyRzNvNHM0bE5iWHB0LWxHS2hVY1l0bTZEYW81eTJYenVETUpxT2p4cGZRT0pDVmx2Yl8xd1hTV29CeDlCekdxMU8xTWM0T3l2VUhuTUpXdmM4aldMTlB5N1lsWTBGcVp5ZkFNNElUUUpxN2tBYUNnWUtBWmdTQVE4U0ZRSEdYMk1pUDRqaDJnVHZLQzZ6RUpDb25QeUhsdzAzNjUiLCAiY2xpZW50X2lkIjogbnVsbCwgImNsaWVudF9zZWNyZXQiOiBudWxsLCAicmVmcmVzaF90b2tlbiI6IG51bGwsICJ0b2tlbl9leHBpcnkiOiAiMjAyNS0xMC0zMFQyMjowNToxNFoiLCAidG9rZW5fdXJpIjogImh0dHBzOi8vb2F1dGgyLmdvb2dsZWFwaXMuY29tL3Rva2VuIiwgInVzZXJfYWdlbnQiOiBudWxsLCAicmV2b2tlX3VyaSI6ICJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS9yZXZva2UiLCAiaWRfdG9rZW4iOiBudWxsLCAiaWRfdG9rZW5fand0IjogbnVsbCwgInRva2VuX3Jlc3BvbnNlIjogbnVsbCwgInNjb3BlcyI6IG51bGwsICJ0b2tlbl9pbmZvX3VyaSI6IG51bGwsICJpbnZhbGlkIjogZmFsc2UsICJhc3NlcnRpb25fdHlwZSI6IG51bGwsICJzZXJ2aWNlX2FjY291bnRfZW1haWwiOiBudWxsLCAiX2NsYXNzIjogIkdjZUFzc2VydGlvbkNyZWRlbnRpYWxzIiwgIl9tb2R1bGUiOiAiYXBpdG9vbHMuYmFzZS5weS5jcmVkZW50aWFsc19saWIifQ=="}}[m
+[1mdiff --git a/.gsutil/gcecredcache b/.gsutil/gcecredcache[m
+[1mindex ff483d4..7a4b1bb 100644[m
+[1m--- a/.gsutil/gcecredcache[m
+[1m+++ b/.gsutil/gcecredcache[m
+[36m@@ -1 +1 @@[m
+[31m-{"scopes": ["email", "https://www.googleapis.com/auth/cloud-platform"], "svc_acct_name": "default"}[m
+\ No newline at end of file[m
+[32m+[m[32m{"scopes": ["email", "https://www.googleapis.com/auth/cloud-platform"], "svc_acct_name": "default"}[m
+[1mdiff --git a/.local/lib/python3.12/site-packages/git_filter_repo-2.47.0.dist-info/WHEEL b/.local/lib/python3.12/site-packages/git_filter_repo-2.47.0.dist-info/WHEEL[m
+[1mindex ae527e7..72166f0 100644[m
+[1m--- a/.local/lib/python3.12/site-packages/git_filter_repo-2.47.0.dist-info/WHEEL[m
+[1m+++ b/.local/lib/python3.12/site-packages/git_filter_repo-2.47.0.dist-info/WHEEL[m
+[36m@@ -2,4 +2,3 @@[m [mWheel-Version: 1.0[m
+ Generator: setuptools (75.6.0)[m
+ Root-Is-Purelib: true[m
+ Tag: py3-none-any[m
+[31m-[m
+[1mdiff --git a/.vscode/settings.json b/.vscode/settings.json[m
+[1mindex 5607f56..7e58be0 100644[m
+[1m--- a/.vscode/settings.json[m
+[1m+++ b/.vscode/settings.json[m
+[36m@@ -2,4 +2,4 @@[m
+     "files.exclude": {[m
+         "**/.*": true[m
+     }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/README-cloudshell.txt b/README-cloudshell.txt[m
+[1mindex 9fa5a74..1002d4b 100755[m
+[1m--- a/README-cloudshell.txt[m
+[1m+++ b/README-cloudshell.txt[m
+[36m@@ -13,4 +13,3 @@[m [maliased to short commands in your shell, for example, you can type "dl <filename[m
+ download a file. Type "cloudshell aliases" to see these commands.[m
+ [m
+ Type "help" to see this message any time. Type "builtin help" to see Bash interpreter help.[m
+[31m-[m
+[1mdiff --git a/agentes-ia/rag-training/README.md b/agentes-ia/rag-training/README.md[m
+[1mindex 1914ec1..b00b507 100644[m
+[1m--- a/agentes-ia/rag-training/README.md[m
+[1m+++ b/agentes-ia/rag-training/README.md[m
+[36m@@ -12,14 +12,14 @@[m [mCentralizar la documentación y datos necesarios para generar embeddings y alime[m
+ [m
+ ## Flujo sugerido[m
+ [m
+[31m-1. **Ingesta**  [m
+[31m-   Normaliza los documentos en `documents/` (UTF-8, formato limpio).  [m
+[32m+[m[32m1. **Ingesta**[m
+[32m+[m[32m   Normaliza los documentos en `documents/` (UTF-8, formato limpio).[m
+    Usa `scripts/ingest.py` (plantilla) para generar embeddings con Gemini 1.5 Pro y guarda la salida en `artifacts/`.[m
+ [m
+[31m-2. **Validación**  [m
+[32m+[m[32m2. **Validación**[m
+    Documenta en esta carpeta las métricas de evaluación (recall, latencia, etc.).[m
+ [m
+[31m-3. **Deploy**  [m
+[32m+[m[32m3. **Deploy**[m
+    Publica los artefactos validados en el almacenamiento elegido (por ejemplo, Vertex Matching Engine o Firestore) y actualiza las referencias en `llm-orchestrator`.[m
+ [m
+ ## Próximos pasos[m
+[1mdiff --git a/agentes-ia/rag-training/artifacts/.gitkeep b/agentes-ia/rag-training/artifacts/.gitkeep[m
+[1mindex 8b13789..e69de29 100644[m
+[1m--- a/agentes-ia/rag-training/artifacts/.gitkeep[m
+[1m+++ b/agentes-ia/rag-training/artifacts/.gitkeep[m
+[36m@@ -1 +0,0 @@[m
+[31m-[m
+[1mdiff --git a/agentes-ia/rag-training/documents/.gitkeep b/agentes-ia/rag-training/documents/.gitkeep[m
+[1mindex 8b13789..e69de29 100644[m
+[1m--- a/agentes-ia/rag-training/documents/.gitkeep[m
+[1m+++ b/agentes-ia/rag-training/documents/.gitkeep[m
+[36m@@ -1 +0,0 @@[m
+[31m-[m
+[1mdiff --git a/auth_url.txt b/auth_url.txt[m
+[1mindex 2fe8aa1..1533837 100644[m
+[1m--- a/auth_url.txt[m
+[1m+++ b/auth_url.txt[m
+[36m@@ -1 +1 @@[m
+[31m-Once finished, enter the verification code provided in your browser: [m
+\ No newline at end of file[m
+[32m+[m[32mOnce finished, enter the verification code provided in your browser:[m
+[1mdiff --git a/body.json b/body.json[m
+[1mindex ec61098..b06f700 100644[m
+[1m--- a/body.json[m
+[1m+++ b/body.json[m
+[36m@@ -1 +1 @@[m
+[31m-{"object":"whatsapp_business_account","entry":[{"id":"106281715882735","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"16505551111","phone_number_id":"104826722569787"},"contacts":[{"profile":{"name":"John Smith"},"wa_id":"16505552222"}],"messages":[{"from":"16505552222","id":"wamid.HBgLMTY1MDU1NTIyMjIVAgARGBJDNjVCM0I1QTgxQjU5M0Y5RgA=","timestamp":"1654731225","text":{"body":"hola"},"type":"text"}]}},{"field":"messages"}]}]}[m
+\ No newline at end of file[m
+[32m+[m[32m{"object":"whatsapp_business_account","entry":[{"id":"106281715882735","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"16505551111","phone_number_id":"104826722569787"},"contacts":[{"profile":{"name":"John Smith"},"wa_id":"16505552222"}],"messages":[{"from":"16505552222","id":"wamid.HBgLMTY1MDU1NTIyMjIVAgARGBJDNjVCM0I1QTgxQjU5M0Y5RgA=","timestamp":"1654731225","text":{"body":"hola"},"type":"text"}]}},{"field":"messages"}]}]}[m
+[1mdiff --git a/dashboard.json b/dashboard.json[m
+[1mindex 1829b73..46d8d27 100644[m
+[1m--- a/dashboard.json[m
+[1m+++ b/dashboard.json[m
+[36m@@ -120,4 +120,4 @@[m
+       }[m
+     ][m
+   }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/dispatcher_error_rate_alert.json b/dispatcher_error_rate_alert.json[m
+[1mindex 5b911c8..cbb9f7d 100644[m
+[1m--- a/dispatcher_error_rate_alert.json[m
+[1m+++ b/dispatcher_error_rate_alert.json[m
+[36m@@ -21,4 +21,4 @@[m
+       }[m
+     }[m
+   ][m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/error_rate.json b/error_rate.json[m
+[1mindex 5ee3b71..8626fea 100644[m
+[1m--- a/error_rate.json[m
+[1m+++ b/error_rate.json[m
+[36m@@ -8,4 +8,4 @@[m
+     "valueType": "INT64",[m
+     "unit": "1"[m
+   }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/incoming_messages_total.json b/incoming_messages_total.json[m
+[1mindex e2d1563..5652e66 100644[m
+[1m--- a/incoming_messages_total.json[m
+[1m+++ b/incoming_messages_total.json[m
+[36m@@ -18,4 +18,4 @@[m
+   "labelExtractors": {[m
+     "tenant": "EXTRACT(jsonPayload.tenant)"[m
+   }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/llm_tokens_total.json b/llm_tokens_total.json[m
+[1mindex 531ac0a..85ddaa7 100644[m
+[1m--- a/llm_tokens_total.json[m
+[1m+++ b/llm_tokens_total.json[m
+[36m@@ -24,4 +24,4 @@[m
+     "tenant": "EXTRACT(jsonPayload.tenant)",[m
+     "model": "EXTRACT(jsonPayload.model)"[m
+   }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/outgoing_messages_total.json b/outgoing_messages_total.json[m
+[1mindex 47bef91..ac400f2 100644[m
+[1m--- a/outgoing_messages_total.json[m
+[1m+++ b/outgoing_messages_total.json[m
+[36m@@ -18,4 +18,4 @@[m
+   "labelExtractors": {[m
+     "tenant": "EXTRACT(jsonPayload.tenant)"[m
+   }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/summary.json b/summary.json[m
+[1mindex a4256f2..99f35f5 100644[m
+[1m--- a/summary.json[m
+[1m+++ b/summary.json[m
+[36m@@ -38,4 +38,4 @@[m
+   "budgets": [],[m
+   "onboarding_endpoint": "https://tenants-admin-878958463385.us-central1.run.app",[m
+   "healthcheck": "https://whatsapp-webhook-878958463385.us-central1.run.app/healthz"[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/uptime_check.json b/uptime_check.json[m
+[1mindex 59acef7..6dd797c 100644[m
+[1m--- a/uptime_check.json[m
+[1m+++ b/uptime_check.json[m
+[36m@@ -13,4 +13,4 @@[m
+   },[m
+   "period": "60s",[m
+   "timeout": "10s"[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/uptime_check_prod.json b/uptime_check_prod.json[m
+[1mindex 73c8916..69efe5d 100644[m
+[1m--- a/uptime_check_prod.json[m
+[1m+++ b/uptime_check_prod.json[m
+[36m@@ -13,4 +13,4 @@[m
+   },[m
+   "period": "60s",[m
+   "timeout": "10s"[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/webhook_latency_alert.json b/webhook_latency_alert.json[m
+[1mindex fd3e715..9c208de 100644[m
+[1m--- a/webhook_latency_alert.json[m
+[1m+++ b/webhook_latency_alert.json[m
+[36m@@ -21,4 +21,4 @@[m
+       }[m
+     }[m
+   ][m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/webhook_latency_ms.json b/webhook_latency_ms.json[m
+[1mindex f05956c..1ef5895 100644[m
+[1m--- a/webhook_latency_ms.json[m
+[1m+++ b/webhook_latency_ms.json[m
+[36m@@ -16,4 +16,4 @@[m
+       "scale": 1[m
+     }[m
+   }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
