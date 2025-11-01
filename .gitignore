@@ -22,3 +22,6 @@ __pycache__/
 *.pyc
 .env
 .env.*
+# herramientas/experimentos que pueden contener secretos
+.codex/
+.gemini/
