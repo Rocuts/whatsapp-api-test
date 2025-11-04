@@ -1,0 +1,21 @@
+
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/dispatcher', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/dispatcher']
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - 'dispatcher'
+  - '--image'
+  - 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/dispatcher'
+  - '--region'
+  - 'us-central1'
+  - '--platform'
+  - 'managed'
+  - '--no-allow-unauthenticated'
+  - '--service-account'
+  - 'dispatcher-sa@agentes-ia-dev.iam.gserviceaccount.com'

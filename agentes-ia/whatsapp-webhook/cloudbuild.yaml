@@ -1,0 +1,26 @@
+
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/whatsapp-webhook', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/whatsapp-webhook']
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - 'whatsapp-webhook'
+  - '--image'
+  - 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/whatsapp-webhook'
+  - '--region'
+  - 'us-central1'
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
+  - '--min-instances'
+  - '1'
+  - '--concurrency'
+  - '100'
+  - '--service-account'
+  - 'webhook-sa@agentes-ia-dev.iam.gserviceaccount.com'
+  - '--set-secrets=META_TOKEN=tenants-viajes-bumeran-META_TOKEN:latest,PHONE_ID=tenants-viajes-bumeran-PHONE_ID:latest,VERIFY_TOKEN=tenants-viajes-bumeran-VERIFY_TOKEN:latest,META_APP_SECRET=tenants-viajes-bumeran-META_APP_SECRET:latest,GCP_PROJECT=GCP_PROJECT:latest,GCP_LOCATION=GCP_LOCATION:latest,GEMINI_MODEL=GEMINI_MODEL:latest'

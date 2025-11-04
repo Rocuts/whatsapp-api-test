@@ -1,0 +1,21 @@
+
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/llm-orchestrator', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/llm-orchestrator']
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - 'llm-orchestrator'
+  - '--image'
+  - 'us-central1-docker.pkg.dev/agentes-ia-dev/agentes-ia/llm-orchestrator'
+  - '--region'
+  - 'us-central1'
+  - '--platform'
+  - 'managed'
+  - '--no-allow-unauthenticated'
+  - '--service-account'
+  - 'orchestrator-sa@agentes-ia-dev.iam.gserviceaccount.com'
