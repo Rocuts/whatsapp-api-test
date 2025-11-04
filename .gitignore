@@ -1,44 +1,17 @@
-# credenciales / llaves / historiales
-.git-credentials
-.git-credentials.bak
-.ssh/
-.lesshst
-.bash_history
-
-# caches / IDE
-.cache/
-.codeoss/
-
-# binarios grandes / herramientas
-cloudcode_cli
-cloud-code/
-cloud-code/**
-
-# comunes
-node_modules/
-dist/
-build/
+# Python-generated files
 __pycache__/
-*.pyc
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv
+
+# OS-specific files
+.DS_Store
+
+# Environment variables
+# Never commit secrets!
 .env
-.env.*
-# herramientas/experimentos que pueden contener secretos
-.codex/
-.gemini/
-.local/
-.npm/
-.rustup/
-.cache/
-.codeoss/
-.codex/
-.gemini/
-.venv/
-venv/
-__pycache__/
-node_modules/
-dist/
-build/
-.docker/
-.gsutil/
-.config/
-README-cloudshell.txt
