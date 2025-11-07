@@ -2,15 +2,7 @@
   "proveedores": [
     {
       "nombre": "Proveedor A",
-      "telefono": "573001112233"
-    },
-    {
-      "nombre": "Proveedor B",
-      "telefono": "573009998877"
-    },
-    {
-      "nombre": "Distribuidor Local",
-      "telefono": "573154445566"
+      "telefono": "573152194582"
     }
   ],
   "mensaje_respuesta": "Hola 👋, eres un proveedor registrado. Te conectaré con una persona del equipo enseguida."

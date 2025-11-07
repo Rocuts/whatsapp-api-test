@@ -1,0 +1,40 @@
+{
+  "paquetes": [
+    {
+      "id": "P001",
+      "nombre": "Aventura en San Andrés",
+      "tipo": "playa",
+      "duracion": "5 días / 4 noches",
+      "destino": "San Andrés, Colombia",
+      "descripcion": "Disfruta de un viaje inolvidable en las playas cristalinas de San Andrés. Incluye tours acuáticos, visita al Hoyo Soplador y Johnny Cay.",
+      "alojamiento": "Hotel categoría 4 estrellas con desayuno incluido",
+      "transporte": "Vuelo ida y regreso desde Bogotá",
+      "precio": "Desde $2.400.000 por persona",
+      "categoria": ["pareja", "familia", "relax", "mar"]
+    },
+    {
+      "id": "P002",
+      "nombre": "Encanto Cafetero",
+      "tipo": "montaña",
+      "duracion": "4 días / 3 noches",
+      "destino": "Eje Cafetero, Colombia",
+      "descripcion": "Descubre la magia del Paisaje Cultural Cafetero con recorridos por fincas, parques temáticos y pueblos típicos.",
+      "alojamiento": "Hotel campestre con desayuno y cena",
+      "transporte": "Transporte terrestre ida y regreso desde Bogotá",
+      "precio": "Desde $1.800.000 por persona",
+      "categoria": ["familia", "aventura", "naturaleza"]
+    },
+    {
+      "id": "P003",
+      "nombre": "Cartagena Colonial",
+      "tipo": "historia",
+      "duracion": "3 días / 2 noches",
+      "destino": "Cartagena, Colombia",
+      "descripcion": "Vive la historia y cultura de Cartagena con recorridos por el centro histórico, murallas y el Castillo San Felipe.",
+      "alojamiento": "Hotel en el centro amurallado",
+      "transporte": "Vuelo ida y regreso desde Bogotá",
+      "precio": "Desde $1.600.000 por persona",
+      "categoria": ["pareja", "historia", "relax"]
+    }
+  ]
+}
